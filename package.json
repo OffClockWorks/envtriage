@@ -1,0 +1,42 @@
+{
+  "name": "envtriage",
+  "version": "1.1.0",
+  "description": "Check .env files against .env.example, generate a value-free .env.example, and diff env files without printing secrets. Zero dependencies.",
+  "bin": {
+    "envtriage": "bin/envtriage.js"
+  },
+  "main": "lib/index.js",
+  "files": [
+    "bin",
+    "lib",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md",
+    "test",
+    "examples"
+  ],
+  "scripts": {
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "dotenv",
+    "env",
+    "lint",
+    "cli",
+    "ci"
+  ],
+  "author": "Off Clock Works (Hot Box Holdings LLC)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OffClockWorks/envtriage.git"
+  },
+  "homepage": "https://github.com/OffClockWorks/envtriage#readme",
+  "bugs": {
+    "url": "https://github.com/OffClockWorks/envtriage/issues"
+  },
+  "private": true
+}

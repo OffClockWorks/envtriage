@@ -1,0 +1,12 @@
+node_modules/
+*.log
+.DS_Store
+coverage/
+# Real env files never belong in the repo. The demo fixtures under examples/demo are fake and are tracked on purpose.
+.env
+.env.*
+!.env.example
+!examples/demo/.env
+!examples/demo/.env.example
+!examples/demo/.env.staging
+!examples/demo/.env.production
