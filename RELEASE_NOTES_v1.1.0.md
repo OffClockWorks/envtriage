@@ -2,7 +2,7 @@
 
 First public release of envtriage, free and open source under the MIT license.
 
-envtriage keeps `.env` files honest without printing secrets. It has no dependencies and needs Node.js 18 or newer.
+envtriage helps keep `.env` files honest without printing values by default. It has no dependencies and needs Node.js 18 or newer.
 
 ## What it does
 
@@ -12,7 +12,7 @@ envtriage keeps `.env` files honest without printing secrets. It has no dependen
 
 ## Changes in 1.1.0
 
-- Renamed from env-doctor to envtriage.
+- Command, bin file and messages now use the name envtriage.
 - Relicensed under MIT.
 - Added CI on Node 20, 22 and 24, plus SECURITY.md, CONTRIBUTING.md and issue templates.
 

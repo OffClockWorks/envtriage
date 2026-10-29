@@ -1,7 +1,7 @@
 {
   "name": "envtriage",
   "version": "1.1.0",
-  "description": "Check .env files against .env.example, generate a value-free .env.example, and diff env files without printing secrets. Zero dependencies.",
+  "description": "Check .env files against .env.example, generate a value-free .env.example, and diff env files without printing values by default. Zero dependencies.",
   "bin": {
     "envtriage": "bin/envtriage.js"
   },

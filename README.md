@@ -1,6 +1,6 @@
 # envtriage
 
-Keep `.env` files honest without printing secrets.
+Helps keep `.env` files honest without printing values by default.
 
 Free and open source under the MIT license. Made by Off Clock Works, a small studio that builds developer tools, templates and starter kits.
 
@@ -10,7 +10,7 @@ Free and open source under the MIT license. Made by Off Clock Works, a small stu
 2. **example**: writes a `.env.example` from your `.env` with every value removed. Commented-out assignments (`# OLD_KEY=...`) are blanked too, and a line it cannot parse is replaced by a note rather than copied.
 3. **diff**: compares two env files (for example staging and production) by key. Values stay hidden unless you ask for them.
 
-The output names keys, files and line numbers only. It never prints values, unless you pass `diff --show-values`.
+The output names keys, files and line numbers only. It does not print values unless you pass `diff --show-values`.
 
 ## Requirements
 
@@ -75,7 +75,7 @@ $ envtriage example
 wrote .env.example (values removed)
 ```
 
-The keys, their order, comments, blank lines and `export` prefixes are kept. Plain comments are copied as written, so if you pasted a secret into a free-text comment, remove it before you commit the example. (Commented-out lines in `KEY=value` form are blanked, including keys with spaces such as `# old key=...`. Other comment forms such as `# token: value` are copied as written. `example` does not detect a real secret typed into a free-text comment, so use a secret scanner for that.) A multi-line quoted value becomes one empty assignment. The command will not overwrite an existing file unless you pass `--force`, and it will never write over the env file it reads. `--stdout` prints the result instead of writing it.
+The keys, their order, comments, blank lines and `export` prefixes are kept. Plain comments are copied as written, so if you pasted a secret into a free-text comment, remove it before you commit the example. (Commented-out lines in `KEY=value` form are blanked, including keys with spaces such as `# old key=...`. Other comment forms such as `# token: value` are copied as written. `example` does not detect a real secret typed into a free-text comment, so use a secret scanner for that.) A multi-line quoted value becomes one empty assignment. The command will not overwrite an existing file unless you pass `--force`, and it refuses to write to the same path as the env file it reads. `--stdout` prints the result instead of writing it.
 
 ### diff
 
@@ -144,3 +144,5 @@ Issues and pull requests are welcome on GitHub. Please include a failing test wi
 ## License
 
 MIT. See `LICENSE`. © 2026 Hot Box Holdings LLC, d/b/a Off Clock Works.
+
+Provided as is, with no warranty; see `LICENSE`. Not a substitute for a secret scanner.

@@ -1,7 +1,7 @@
 # Changelog
 
 ## 1.1.0 (2026-10-15)
-- Renamed from env-doctor to envtriage. The command, the bin file and the messages all use the new name.
+- Command, bin file and messages now use the name envtriage.
 - Relicensed under MIT and released as free open source. The commercial license no longer applies.
 - README: install from GitHub and contributing notes.
 - Added CI (GitHub Actions, Node 20/22/24), SECURITY.md, CONTRIBUTING.md and issue templates.

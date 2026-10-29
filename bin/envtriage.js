@@ -8,7 +8,7 @@ const { makeExample } = require('../lib/example');
 const { diff } = require('../lib/diff');
 const pkg = require('../package.json');
 
-const HELP = `envtriage ${pkg.version}: keep .env files honest without printing secrets
+const HELP = `envtriage ${pkg.version}: helps keep .env files honest without printing values by default
 
 Usage:
   envtriage check   [--env FILE] [--example FILE] [--strict] [--json]
