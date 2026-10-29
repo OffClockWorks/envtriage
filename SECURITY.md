@@ -1,6 +1,6 @@
 # Security policy
 
-envtriage reads `.env` files and is designed never to print their values. If you find a way to make it print, write or leak a value, please treat that as a security issue.
+envtriage reads `.env` files and is designed not to print their values unless you pass `diff --show-values`. If you find another way to make it print, write or leak a value, please treat that as a security issue.
 
 ## Reporting
 
