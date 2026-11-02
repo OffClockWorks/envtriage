@@ -107,7 +107,7 @@ envtriage diff: .env.staging vs .env.production
     node tools/envtriage/bin/envtriage.js check --env .env.ci --example .env.example --strict
 ```
 
-With --strict, an empty value is an error, so copying .env.example to .env.ci will always fail: its values are blank.
+With --strict, an empty value is an error, so a .env.ci copied from a blank .env.example will fail.
 
 ## Supported .env syntax
 
